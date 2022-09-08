@@ -44,7 +44,7 @@ ${data[2]}
 ${data[3]}
 
 ## License
-[${data[7]}]${gen(data[7])[1]}
+${gen(data[7])[1]}
 
 ## Tests
 ${data[4]}
@@ -102,7 +102,7 @@ function init() {
         },
         {
             type: "list",
-            choices: ["MIT", "Apace", "Mozilla", "Eclipse"],
+            choices: ["MIT", "Apache 2.0", "Mozilla", "Eclipse", "None"],
             message: questions[8], //Please type out a license to use
             name: "license",
         },

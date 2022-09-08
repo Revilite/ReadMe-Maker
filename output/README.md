@@ -1,6 +1,6 @@
 # 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ## Table of Contents
 1. [Description](#description)
@@ -26,7 +26,7 @@
 
 
 ## License
-[MIT](https://opensource.org/licenses/MIT)
+This project is not under any license
 
 ## Tests
 
