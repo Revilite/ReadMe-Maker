@@ -116,7 +116,7 @@ function init() {
             details.push(response.license);
 
             
-            fs.writeFile("./project_readMe/readMe.md", writeToFile(response.title, details), (err) =>
+            fs.writeFile("./output/readMe.md", writeToFile(response.title, details), (err) =>
             err ? console.error(err): console.log("readMe has been made"));
 
         })
