@@ -48,7 +48,7 @@ ${data[4]}
 ## Questions
 [Link to Github](https://www.github.com/${data[5]})\n
 
-How to reach Me:
+How to reach Me:\n
 Email Address: ${data[6]}
 
 
