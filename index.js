@@ -57,7 +57,6 @@ Email Address: ${data[6]}`
 
 // TODO: Create a function to initialize app
 function init() {
-
     inquirer
         .prompt([
         {
