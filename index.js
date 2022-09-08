@@ -4,7 +4,7 @@ const inquirer = require('inquirer');
 const fs = require("fs")
 // : Create an array of questions for user input
 const questions = ["What is the title of your project?", 
-"What will the project be about",
+"Please write a description for your project",
 "Is there a special way to install it?",
 "What is the Usage for it?",
 "What are the contribution guidelines",
@@ -43,16 +43,18 @@ ${data[2]}
 ## Contribution
 ${data[3]}
 
-## License
-${gen(data[7])[1]}
-
 ## Tests
 ${data[4]}
 
 ## Questions
 [Link to Github](https://www.github.com/${data[5]})\n
-Email Address: ${data[6]}`
 
+How to reach Me:
+Email Address: ${data[6]}
+
+
+## License
+${gen(data[7])[1]}`
  }
 
 // TODO: Create a function to initialize app
