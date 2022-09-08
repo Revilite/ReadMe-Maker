@@ -122,7 +122,7 @@ function init() {
             if(!fs.existsSync("output")){
                 fs.mkdirSync("output");
             }
-            fs.writeFileSync("./output/readMe.md", writeToFile(response.title, details))
+            fs.writeFileSync("./output/README.md", writeToFile(response.title, details))
             console.log("readMe has been generated");
         })
 
