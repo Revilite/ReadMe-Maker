@@ -11,7 +11,7 @@ const questions = ["What is the title of your project?",
 "Are there any test instructions for the project?",
 "What is your Github Username?",
 "What is your Email Address?",
-"Please type out a license to use\nMIT,  Apache\nMozilla, Eclipse \n",
+"Choose which license you would like to use",
 ];
 
 // TODO: Create a function to write README file
@@ -59,47 +59,48 @@ function init() {
         .prompt([
         {
             type: "input",
-            message: questions[0],
+            message: questions[0], //What is the title of your project?
             name: "title",
         },
         {
             type: "input",
-            message: questions[1],
+            message: questions[1], //What will the project be about
             name: "description"
         },
         {
             type: "input",
-            message: questions[2],
+            message: questions[2], //Is there a special way to install it?
             name: "installation",
         },
         {
             type: "input",
-            message: questions[3],
+            message: questions[3], //What is the Usage for it?
             name: "usage",
         },
         {
             type: "input",
-            message: questions[4],
+            message: questions[4], //What are the contribution guidelines
             name: "contribution",
         },
         {
             type: "input",
-            message: questions[5],
+            message: questions[5], //Are there any test instructions for the project?
             name: "test",
         },
         {
             type:"input",
-            message: questions[6],
+            message: questions[6], //What is your Github Username?
             name: "username"
         },
         {
             type: "input",
-            message: questions[7],
+            message: questions[7], //What is your Email Address?
             name: "email"
         },
         {
-            type: "input",
-            message: questions[8],
+            type: "list",
+            choices: ["MIT", "Apace", "Mozilla", "Eclipse"],
+            message: questions[8], //Please type out a license to use
             name: "license",
         },
         ])
