@@ -25,9 +25,9 @@ ${gen(data[7])[0]}
 2. [Installation](#installation)
 3. [Usage](#usage)
 4. [Contribution](#contribution)
-5. [License](#license)
 5. [Test](#tests)
 6. [Questions](#questions)
+7. [License](#license)
 
 
 ## Description
