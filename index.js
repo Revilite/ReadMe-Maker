@@ -14,13 +14,31 @@ const questions = ["What is the title of your project?",
 function writeToFile(fileName, data) {
 return`# ${fileName}
 ## Table of Contents
-1. [Description]{#description}
-
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage information)
+4. [Contribution](#contribution guidelines)
+5. [Test](test instructions)
 
 
 
 ## Description
 ${data[0]}
+
+
+## Installation
+${data[1]}
+
+## Usage Information
+${data[2]}
+
+## Contribution Guidelines
+${data[3]}
+
+## Test Instructions
+${data[4]}
+
+
 `
  }
 
