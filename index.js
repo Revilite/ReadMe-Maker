@@ -17,6 +17,9 @@ const questions = ["What is the title of your project?",
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 return`# ${fileName}
+
+${gen(data[7])[0]}
+
 ## Table of Contents
 1. [Description](#description)
 2. [Installation](#installation)
@@ -41,7 +44,7 @@ ${data[2]}
 ${data[3]}
 
 ## License
-${data[7]}
+[${data[7]}]${gen(data[7])[1]}
 
 ## Tests
 ${data[4]}
@@ -115,10 +118,13 @@ function init() {
             details.push(response.username);
             details.push(response.email);  
             details.push(response.license);
-
+            gen(response.license);
             
             fs.writeFile("./output/readMe.md", writeToFile(response.title, details), (err) =>
             err ? console.error(err): console.log("readMe has been made"));
+            
+            console.log(gen(response.license)[1]);
+
 
         })
   
@@ -127,3 +133,4 @@ function init() {
 // Function call to initialize app
 init();
 // gen();
+
