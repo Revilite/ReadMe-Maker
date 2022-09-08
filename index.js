@@ -13,8 +13,7 @@ const questions = ["What is the title of your project?",
 "What is your Email Address?",
 "Choose which license you would like to use",
 ];
-
-// TODO: Create a function to write README file
+// : Create a function to write README file
 function writeToFile(fileName, data) {
 return`# ${fileName}
 
@@ -57,7 +56,7 @@ Email Address: ${data[6]}
 ${gen(data[7])[1]}`
  }
 
-// TODO: Create a function to initialize app
+// : Create a function to initialize app
 function init() {
     inquirer
         .prompt([
@@ -104,7 +103,7 @@ function init() {
         {
             type: "list",
             choices: ["MIT", "Apache 2.0", "Mozilla", "Eclipse", "None"],
-            message: questions[8], //Please type out a license to use
+            message: questions[8], //Choose which license you would like to use
             name: "license",
         },
         ])
@@ -122,7 +121,7 @@ function init() {
             gen(response.license);
             
             fs.writeFile("./output/readMe.md", writeToFile(response.title, details), (err) =>
-            err ? console.error(err): console.log("readMe has been made"));
+            err ? console.error(err): console.log("readMe has been Generated"));
             
             console.log(gen(response.license)[1]);
 
@@ -133,5 +132,3 @@ function init() {
 
 // Function call to initialize app
 init();
-// gen();
-
